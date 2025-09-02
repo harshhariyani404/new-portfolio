@@ -1,0 +1,269 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Common Headings */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: #ffffff;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+.contact-btn:hover {
+  background: #555;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 1.6rem;
+  margin-right: 15px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn blue effect */
+}
+
+.hero-image img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #333;
+  margin-top: 20px;
+}
+/* About Section */
+.about {
+  padding: 60px 10%;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-content p {
+    padding-bottom: 4rem;
+  flex: 1;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-info {
+    text-align: left;
+  flex: 1;
+}
+
+.about-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-info li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+/* Skills Section */
+.skills {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-item {
+  background: transparent;   /* no background */
+  padding: 20px;
+  text-align: center;
+  width: 120px;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+
+/* Projects Section */
+.projects {
+  padding: 80px 10%;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.project-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+}
+
+.project-item h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 8px;
+  color: #222;
+}
+
+.project-item p {
+  font-size: 0.95rem;
+  color: #666;
+  padding: 0 15px 20px;
+  line-height: 1.5;
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact-form {
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 8px 15px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  align-self: center;
+}
+
+.contact-form button:hover {
+  background: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    margin-top: 20px;
+  }
+
+  .about-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

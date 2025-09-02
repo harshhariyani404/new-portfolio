@@ -1,0 +1,42 @@
+/* Header.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+nav a.active {
+  background-color: white;
+  color: black;
+}
