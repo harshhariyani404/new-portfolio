@@ -73,8 +73,10 @@ const Herosec = () => {
             </a>
           </div>
           <div className="project-item">
-            <h3>Diry Dass</h3>
-            <img src={milk} alt="Milk website" />
+            <a href="https://ayush989889898.github.io/dairydash./">
+              <h3>Dairy Dash</h3>
+              <img src={milk} alt="Milk website" />
+            </a>
           </div>
           <div className="project-item">
             <a href="https://harshhariyani404.github.io/Restaurant/">
