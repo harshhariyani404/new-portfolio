@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d build"
 
   },
-  "homepage": "https://github.com/harshhariyani404/new-portfolio",
+  "homepage": "https://github.com/harshhariyani404.github.io/new-portfolio",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
