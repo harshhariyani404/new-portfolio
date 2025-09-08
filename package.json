@@ -7,8 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
+  "homepage": "https://github.com/harshhariyani404/new-portfolio",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
