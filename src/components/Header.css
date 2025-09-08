@@ -1,15 +1,17 @@
-/* Header.css */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .header {
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  position: relative;
 }
 
 .logo {
@@ -18,7 +20,7 @@
   font-weight: bold;
 }
 
-/* Navbar styles */
+/* Navbar */
 nav {
   display: flex;
   gap: 20px;
@@ -39,4 +41,42 @@ nav a:hover {
 nav a.active {
   background-color: white;
   color: black;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: black;
+    flex-direction: column;
+    width: 200px;
+    display: none; /* hide by default */
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  nav.show {
+    display: flex; /* show when toggled */
+  }
+
+  .hamburger {
+    display: flex; /* only show on mobile */
+  }
 }

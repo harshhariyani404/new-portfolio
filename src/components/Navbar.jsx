@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({ menuOpen }) => {
   return (
-    <nav>
+    <nav className={menuOpen ? "show" : ""}>
       <a href="#about">About Me</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
