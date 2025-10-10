@@ -6,6 +6,8 @@ import jewelry from './assets/jewelry.jpg'
 import cupcakee from './assets/cupcakee.jpg'
 import milk from './assets/milk.jpg'
 import cooking from './assets/cooking.jpg'
+import harsh from './assets/Harsh.jpg';
+
 
 const Herosec = () => {
   return (
@@ -24,7 +26,7 @@ const Herosec = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src="src/assets/Harsh.jpg" alt="Harsh Hariyani" />
+          <img src={harsh} alt="Harsh Hariyani" />
         </div>
       </div>
 
