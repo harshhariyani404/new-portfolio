@@ -24,7 +24,7 @@ const Herosec = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src="src/assets/Harsh.jpeg" alt="Harsh Hariyani" />
+          <img src="src/assets/Harsh.jpg" alt="Harsh Hariyani" />
         </div>
       </div>
 
