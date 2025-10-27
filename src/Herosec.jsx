@@ -65,8 +65,10 @@ const Herosec = () => {
         <h2 className="section-heading">Projects</h2>
         <div className="projects-content">
           <div className="project-item">
+            <a href="https://dsbrothers.netlify.app/">
             <h3>Jewelry website</h3>
             <img src={jewelry} alt="Jewelry website" />
+            </a>
           </div>
           <div className="project-item">
             <a href="https://harshhariyani404.github.io/Cupcake/">
